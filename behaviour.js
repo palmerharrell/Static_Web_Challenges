@@ -10,11 +10,9 @@ function switchClass(e) {
     	buttons[i].className = "challenge";
     }
     e.className = 'challenge_active';
-    // document.getElementById("code1").innerHTML = code1;
   } else {
     e.className = 'challenge';
   }
-
   for (var i = 0; i < buttons.length; i++) {
   	if (buttons[i].className === "challenge_active") {
   		snippets[i].className = "code_visible";
