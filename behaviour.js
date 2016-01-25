@@ -15,7 +15,6 @@ function switchClass(e) {
     e.className = 'challenge';
   }
 
-  // THIS IS BROKEN
   for (var i = 0; i < buttons.length; i++) {
   	if (buttons[i].className === "challenge_active") {
   		snippets[i].className = "code_visible";
@@ -23,6 +22,4 @@ function switchClass(e) {
   		snippets[i].className = "code_hidden";
   	}
   }
-  // END BROKEN CODE
-
 }
