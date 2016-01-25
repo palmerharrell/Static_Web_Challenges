@@ -1,0 +1,106 @@
+body {
+  font-family: 'Iceland', cursive;
+}
+
+.challenge h1, .challenge_active h1 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  padding-bottom: 10px;
+  
+  font-size: 2.2em;
+}
+
+.challenge h1 {
+  border-bottom: 2px solid #0069CC;
+}
+
+.challenge_active h1 {
+  border-bottom: 2px solid white;
+}
+
+p {
+  margin: 0;
+}
+
+.challenge {
+  width: 420px;
+  margin: 20px 10px;
+  border: 3px solid #0069CC;
+  border-radius: 10px;
+  padding: 5px 0;
+  box-shadow: 4px 6px 20px -5px rgba(6,105,180,0.45);
+  color: #00A7F5;
+  text-align: center;
+}
+
+.challenge_active {
+  width: 420px;
+  margin: 20px 10px;
+  border: 3px solid #0069CC;
+  border-radius: 10px;
+  padding: 5px 0;
+  background-color: rgba(6,105,180,0.45);
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+
+.challenge, .challenge_active {
+  cursor: pointer;
+}
+
+.answer {
+  font-size: 1.2em;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+}
+
+.code_hidden, .code_visible {
+  position:relative;
+  top: 340px;
+  left: 10px;
+  z-index: 1;
+}
+
+.code_hidden {
+  display: none;
+}
+
+.code_visible {
+  display: block;
+}
+
+xmp {
+  margin-left: 10px;
+  font-size: 1.3em;
+}
+
+/* iPhone 6+ */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .challenge, .challenge_active {
+      width: 95%;
+      font-size: 1.8em;
+    }
+    .code_hidden, .code_visible {
+    position:absolute;
+    top: 520px;
+    left: 10px;
+  }
+    xmp {
+      font-size: 2.4em;
+      margin-top: 0;
+      margin-left: 3%;
+    }
+}
