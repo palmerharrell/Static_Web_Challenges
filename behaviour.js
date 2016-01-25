@@ -2,8 +2,6 @@
 var buttons = document.getElementById('solutions').getElementsByTagName('article');
 var snippets = document.getElementById('snippets').getElementsByTagName('article');
 
-var code1 = "<xmp>xmp insertion test</xmp>";
-
 function switchClass(e) {
 	if(e.className === 'challenge') {
     for (var i = 0; i < buttons.length; i++) {
